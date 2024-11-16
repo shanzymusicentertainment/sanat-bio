@@ -1,0 +1,151 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    font-family: "San Francisco", -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #fff; /* Beyaz arka plan */
+    color: #000; /* Siyah yazı */
+    line-height: 1.6;
+}
+
+/* Başlık */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Siyah başlık */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* İçerik Alanı */
+.content {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Hakkımda */
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Sosyal Medya Kartları */
+.social-media .social-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #f1f1f1; /* Açık gri tonları */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Yumuşak gölge */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Hover efekti */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Hover gölge efekti */
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #000; /* Siyah başlık */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #666; /* Gri açıklamalar */
+}
+
+.card .icon {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background-color: #444; /* Gri butonlar */
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+}
+
+.card .icon:hover {
+    background-color: #333; /* Hover buton rengi */
+}
+
+.card .icon.album-link {
+    background-color: #ff0000; /* YouTube Music için kırmızı buton */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .icon.album-link:hover {
+    background-color: #fff;
+    color: #ff0000;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Alt Bilgi */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1; /* Açık gri footer */
+    font-size: 1em;
+    color: #555; /* Gri yazı */
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .social-cards {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
